@@ -1,18 +1,13 @@
 import React from 'react';
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import './App.css'
+import { Layout } from './components/layouts';
+import './App.css';
 
-function App() {
-
-  return (
-<>
-<BrowserRouter>
-<Routes>
-           <Route index/>
-</Routes>
-</BrowserRouter>
-</>
-)
-}
+const App: React.FC = () =>{
+  return(
+    <Layout>
+      
+    </Layout>
+  );
+};
 
 export default App
