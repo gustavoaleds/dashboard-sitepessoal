@@ -1,0 +1,38 @@
+.tableTitle{
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 3vw;
+    margin-bottom: 3vh;
+    padding-left: 1vw;
+}
+
+table{
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    width: 85vw;
+    height: 6vh;
+}
+
+th{
+    padding: 5px;
+    color: #BBC0F4;
+    background-color: #010316;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: transparent;
+}
+
+td{
+    color: #010316;
+    background-color: #BBC0F4;;
+    font-size: 13px;
+    max-width: 28.3vw;
+    height: 7vh;
+}

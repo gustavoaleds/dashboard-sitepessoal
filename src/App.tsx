@@ -5,6 +5,7 @@ import './App.css';
 import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
 import CadastrarProjeto from './pages/portfolio/cadastrarProjeto/CadastrarProjeto';
+import ListaProjetos from './pages/portfolio/listaProjetos/ListaProjetos';
 
 const App: React.FC = () =>{
   return(
@@ -14,6 +15,7 @@ const App: React.FC = () =>{
       <Route path='/' element={<Home />}/>
       <Route path='portfolio' element={<Portfolio />}/>
       <Route path='portfolio/cadastrarprojeto' element={<CadastrarProjeto/>}/>
+      <Route path='portfolio/listaprojetos' element={<ListaProjetos/>}/>
     </Routes>      
     </Layout>
     </BrowserRouter>
