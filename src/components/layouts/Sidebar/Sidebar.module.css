@@ -6,7 +6,7 @@
     background: #31323C;
 }
 
-.titleSidebar{
+h1{
     font-weight: 600;
     font-size: 35px;
     line-height: 44px;
@@ -24,4 +24,15 @@
     border-radius: 5px;
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
 }
