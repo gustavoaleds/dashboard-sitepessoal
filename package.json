@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "serve": "json-server --watch src/db.json --port 5000"
+    "server": "json-server --watch src/database/db.json --port 5000"
   },
   "dependencies": {
     "axios": "^1.4.0",

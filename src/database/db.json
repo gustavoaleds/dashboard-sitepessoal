@@ -1,3 +1,16 @@
 {
-    "projetos":[]
+  "projetos": [
+    {
+      "id": 6,
+      "nome": "NEXUS SOCIETY",
+      "descricao": "Site fantasia para fórum ou clube.",
+      "link": "https://nexus-society.vercel.app/"
+    },
+    {
+      "id": 7,
+      "nome": "GA",
+      "descricao": "Primeira versão de meu portfólio.",
+      "link": "https://portfolio-pessoal-iota.vercel.app/"
+    }
+  ]
 }
