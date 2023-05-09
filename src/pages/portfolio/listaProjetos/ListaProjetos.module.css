@@ -9,12 +9,13 @@
     padding: 0;
     margin-top: 3vw;
     margin-bottom: 3vh;
-    padding-left: 1vw;
+    padding-left: 15vw;
 }
 
 table{
     text-align: center;
     color: rgb(0, 0, 0);
+    margin-left: 15vw;
 
     width: 85vw;
     height: 6vh;

@@ -12,5 +12,12 @@
       "descricao": "Primeira versão de meu portfólio.",
       "link": "https://portfolio-pessoal-iota.vercel.app/"
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "teste@teste.com",
+      "password":"123456"
+    }
   ]
 }

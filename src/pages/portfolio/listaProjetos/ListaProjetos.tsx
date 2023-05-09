@@ -3,6 +3,7 @@ import Portfolio from "../Portfolio";
 import styles from './ListaProjetos.module.css';
 import { Projetos, deleteProjeto, getProjetos, updateProjeto } from "../../../services/projetosService";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Sidebar } from "../../../components/layouts/Sidebar";
 
 
 const ListaProjetos: React.FC = () => {
@@ -44,6 +45,7 @@ const ListaProjetos: React.FC = () => {
     }
 return(
     <>
+    <Sidebar/>
     <Portfolio/>
     <div className={styles.table}>
     <h1 className={styles.tableTitle}>Lista de projetos</h1>

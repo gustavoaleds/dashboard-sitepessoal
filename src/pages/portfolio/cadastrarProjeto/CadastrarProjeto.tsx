@@ -9,6 +9,7 @@ import { Projetos, createOrEditProjeto, createProjetos } from '../../../services
 
 import Input from "../../../components/forms/Input/Input";
 import TextArea from "../../../components/forms/textarea/textarea";
+import { Sidebar } from "../../../components/layouts/Sidebar";
 
 const CadastrarProjeto: React.FC = () => {
     const navigate = useNavigate();
@@ -43,6 +44,7 @@ const CadastrarProjeto: React.FC = () => {
 
  return(
     <>
+    <Sidebar/>
     <Portfolio/>
     <Formik initialValues={projeto || initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
     {({errors, touched}) => (

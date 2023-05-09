@@ -6,8 +6,7 @@ children: React.ReactNode;}
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return(
-        <div className={styles.all}>
-            <Sidebar/>            
+        <div className={styles.all}>            
             <div className={styles.content}>
             {children}
             </div>
