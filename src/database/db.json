@@ -5,6 +5,12 @@
       "nome": "GA",
       "descricao": "Primeira versão de meu portfólio.",
       "link": "https://portfolio-pessoal-iota.vercel.app/"
+    },
+    {
+      "id": 8,
+      "nome": "Nexus Society",
+      "descricao": "Site fantasia para um clube ou fórum.",
+      "link": "https://site-pessoal-react-zeta.vercel.app/"
     }
   ],
   "usuarios": [
