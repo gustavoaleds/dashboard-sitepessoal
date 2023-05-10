@@ -1,12 +1,6 @@
 {
   "projetos": [
     {
-      "id": 6,
-      "nome": "NEXUS SOCIETY",
-      "descricao": "Site fantasia para fórum ou clube.",
-      "link": "https://nexus-society.vercel.app/"
-    },
-    {
       "id": 7,
       "nome": "GA",
       "descricao": "Primeira versão de meu portfólio.",
@@ -17,7 +11,7 @@
     {
       "id": 1,
       "email": "teste@teste.com",
-      "password":"123456"
+      "password": "123456"
     }
   ]
 }

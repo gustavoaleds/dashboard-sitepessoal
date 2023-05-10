@@ -4,6 +4,7 @@ import styles from './ListaProjetos.module.css';
 import { Projetos, deleteProjeto, getProjetos, updateProjeto } from "../../../services/projetosService";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Sidebar } from "../../../components/layouts/Sidebar";
+import { Column, Table } from "../../../components/commons/table";
 
 
 const ListaProjetos: React.FC = () => {
@@ -34,47 +35,31 @@ const ListaProjetos: React.FC = () => {
         navigate('/portfolio/cadastrarprojeto', { state: projetos })
     }
 
-    const handleDelete = async (id: number) => {
+    const handleDelete = async (projetos: Projetos) => {
         try {
-            await deleteProjeto(id);
+            await deleteProjeto(projetos.id);
             alert('Projeto excluído com sucesso!')
         } catch (error) {
             console.log('Ocorreu um erro ao deletar projeto.', error)
             
         }
     }
+    const columns: Column<Projetos>[] = [
+        {header: 'Nome', accessor: 'nome'},
+        {header: 'Descrição', accessor: 'descricao'},
+        {header: 'Link', accessor: 'link'},
+    ];
 return(
     <>
     <Sidebar/>
     <Portfolio/>
-    <div className={styles.table}>
     <h1 className={styles.tableTitle}>Lista de projetos</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Link</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            {projetos.map((itemProjetos, index) => (
-                <tr key={index}>
-                <td>{itemProjetos.nome}</td>
-                <td>{itemProjetos.descricao}</td>
-                <td>{itemProjetos.link}</td>
-                <td>
-                    <button onClick={() => handleEdit(itemProjetos)}>Editar</button>
-                    <button onClick={() => handleDelete(itemProjetos.id)}>Excluir</button>
-                </td>
-            </tr>                
-            ))}
-            
-        </tbody>
-    </table>        
-    </div>
-
+    <Table
+        columns={columns}
+        data={projetos}
+        handleEdit={handleEdit}
+        handleDelete={handleDelete}
+        />   
     </>
 )
 }

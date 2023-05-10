@@ -35,7 +35,7 @@ export const Table = <T,>({ columns, data, handleEdit, handleDelete }: TableProp
                             </td>
                             :
                             <td key={columnIndex} className={styles.td}>{item[column.accessor] as ReactNode}</td>
-                        ))};
+                        ))}
                         {(handleEdit || handleDelete) && (
                             <td className={styles.td}>
                                 {handleEdit && <button onClick={() => handleEdit(item)}>Editar</button>}
