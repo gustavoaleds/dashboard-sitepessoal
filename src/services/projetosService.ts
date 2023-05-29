@@ -12,8 +12,8 @@ export async function createProjetos(projetos:Projetos): Promise<Projetos>{
     return response.data;
 }
 
-export async function getProjetos(): Promise<Projetos> {
-    const response = await api.get<Projetos>('/projetos');
+export async function getProjetos(): Promise<Projetos[]> {
+    const response = await api.get<Projetos[]>('/projetos');
     return response.data;
 }
 
