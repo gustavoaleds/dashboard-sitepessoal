@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { User } from "../services/userService";
+import { LoginData } from "../services/authService";
 
 interface AuthContextProps {
     authenticated: boolean;
-    user: User;
-    login: (user: User) => void;
+    user: LoginData;
+    login: (user: LoginData) => void;
     logout: () => void;
     isLoading: boolean;
 }
@@ -13,7 +13,7 @@ const AuthContext = createContext<AuthContextProps>({} as AuthContextProps);
 export const useAuth = () => useContext(AuthContext);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [authenticated, setAuthenticated] = useState(false);
-    const [user, setUser] = useState({} as User);
+    const [user, setUser] = useState({} as LoginData);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -25,14 +25,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsLoading(false);
     }, []);
 
-    const login = (loggedInUser: User) => {
+    const login = (loggedInUser: LoginData) => {
         setUser(loggedInUser);
         setAuthenticated(true);
         localStorage.setItem("user", JSON.stringify(loggedInUser));
     }
 
     const logout = () => {
-        setUser({} as User);
+        setUser({} as LoginData);
         setAuthenticated(false);
         localStorage.removeItem("user");
     }
