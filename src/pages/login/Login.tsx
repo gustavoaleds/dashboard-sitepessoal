@@ -42,7 +42,6 @@ const Login = () => {
     }
     return(
         <div className={styles.login}>
-            
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
             {({errors, touched}) => (
                 <Form className={styles.loginForm}>
@@ -54,7 +53,6 @@ const Login = () => {
                     errors={errors.email}
                     touched={touched.email}
                     />
-
                     <Input
                     label="Senha"
                     name="password"

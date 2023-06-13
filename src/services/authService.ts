@@ -1,4 +1,5 @@
 import api from './api';
+
 export interface LoginData {
     email:string;
     password: string;

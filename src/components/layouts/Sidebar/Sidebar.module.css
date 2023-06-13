@@ -33,9 +33,10 @@ h1{
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    height: 60vh;
 }
 
 a{
@@ -45,7 +46,6 @@ a{
 .logout{
     width: 130px;
     height: 34px;
-    margin-top: 50vh;
     background: #e60808;
     color: white;
     border-radius: 5px;
